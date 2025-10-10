@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// https://leetcode.com/problems/valid-anagram/description/
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
