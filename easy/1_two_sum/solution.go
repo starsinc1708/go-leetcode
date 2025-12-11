@@ -14,7 +14,8 @@ func twoSum(nums []int, target int) []int {
 
 	for i, num := range nums {
 		reminder := target - num
-		if index, found := m[reminder]; found {
+		index, found := m[reminder]
+		if found {
 			return []int{index, i}
 		}
 		m[num] = i
