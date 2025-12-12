@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// O(2n) worst
 func minSubArrayLen(target int, nums []int) int {
 	if len(nums) == 0 {
 		return 0
