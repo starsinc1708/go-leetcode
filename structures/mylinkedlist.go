@@ -1,4 +1,4 @@
-package mylinkedlist
+package structures
 
 type ListNode struct {
 	Value int
@@ -10,7 +10,7 @@ type MyLinkedList struct {
 	Size int
 }
 
-func Constructor() MyLinkedList {
+func LinkedListConstructor() MyLinkedList {
 	return MyLinkedList{}
 }
 
