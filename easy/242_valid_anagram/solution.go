@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package p242_valid_anagram
 
 // https://leetcode.com/problems/valid-anagram/description/
 func isAnagram(s string, t string) bool {
@@ -24,11 +20,4 @@ func isAnagram(s string, t string) bool {
 	}
 
 	return true
-}
-
-func main() {
-	fmt.Println(isAnagram("anagram", "nagaram"))
-	fmt.Println(isAnagram("rat", "car"))
-	fmt.Println(isAnagram("rat", "art"))
-	fmt.Println(isAnagram("aacc", "ccac"))
 }

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p20_valid_parentheses
 
 func isMatching(open rune, close rune) bool {
 	return (open == '(' && close == ')') ||
@@ -28,11 +26,4 @@ func isValid(s string) bool {
 	}
 
 	return len(stack) == 0
-}
-
-func main() {
-	fmt.Println(isValid("()"))     // true
-	fmt.Println(isValid("()[]{}")) // true
-	fmt.Println(isValid("([])"))   // true
-	fmt.Println(isValid("([)]"))   // false
 }

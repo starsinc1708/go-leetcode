@@ -1,4 +1,4 @@
-package main
+package p234_palindrome_linked_list
 
 type ListNode struct {
 	Val  int
@@ -39,8 +39,4 @@ func isPalindrome(head *ListNode) bool {
 		second = second.Next
 	}
 	return true
-}
-
-func main() {
-
 }

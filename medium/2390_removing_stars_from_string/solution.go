@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p2390_removing_stars_from_string
 
 func removeStars(s string) string {
 	var stack []uint8
@@ -14,12 +12,4 @@ func removeStars(s string) string {
 	}
 
 	return string(stack)
-}
-
-func main() {
-	fmt.Println(removeStars("***"))         // ""
-	fmt.Println(removeStars("leet**cod*e")) // "lecoe"
-	fmt.Println(removeStars("eerase*****")) // "e"
-	fmt.Println(removeStars("erase*****1")) // "1"
-
 }

@@ -1,4 +1,4 @@
-package main
+package p206_reverse_linked_list
 
 type ListNode struct {
 	Val  int
@@ -15,8 +15,4 @@ func reverseList(head *ListNode) *ListNode {
 		cur = tmp
 	}
 	return prev
-}
-
-func main() {
-
 }

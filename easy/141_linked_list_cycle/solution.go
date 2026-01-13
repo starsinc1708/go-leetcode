@@ -1,4 +1,4 @@
-package main
+package p141_linked_list_cycle
 
 type ListNode struct {
 	Val  int
@@ -17,8 +17,4 @@ func hasCycle(head *ListNode) bool {
 		}
 	}
 	return false
-}
-
-func main() {
-
 }

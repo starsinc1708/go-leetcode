@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p977_squares_of_a_sorted_array
 
 func sortedSquares(nums []int) []int {
 	result := make([]int, len(nums))
@@ -22,8 +20,4 @@ func sortedSquares(nums []int) []int {
 		i--
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(sortedSquares([]int{-4, -1, 0, 3, 10}))
 }

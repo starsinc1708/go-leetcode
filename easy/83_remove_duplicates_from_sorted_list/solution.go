@@ -1,4 +1,4 @@
-package main
+package p83_remove_duplicates_from_sorted_list
 
 type ListNode struct {
 	Val  int
@@ -16,8 +16,4 @@ func deleteDuplicates(head *ListNode) *ListNode {
 
 	}
 	return head
-}
-
-func main() {
-
 }

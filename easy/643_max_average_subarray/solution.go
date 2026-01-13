@@ -1,7 +1,6 @@
-package main
+package p643_max_average_subarray
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -19,8 +18,4 @@ func findMaxAverage(nums []int, k int) float64 {
 	}
 
 	return result / float64(k)
-}
-
-func main() {
-	fmt.Println(findMaxAverage([]int{1, 2, 3, 4, 5}, 2))
 }

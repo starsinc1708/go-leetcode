@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p24_swap_nodes_in_pairs
 
 type ListNode struct {
 	Val  int
@@ -23,9 +21,4 @@ func swapPairs(head *ListNode) *ListNode {
 	}
 
 	return dummy.Next
-}
-
-func main() {
-	fmt.Println(swapPairs(&ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, nil}}}}))
-
 }

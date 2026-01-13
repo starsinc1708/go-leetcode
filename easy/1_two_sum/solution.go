@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p1_two_sum
 
 // https://leetcode.com/problems/two-sum/
 // Time complexity: O(n)
@@ -22,8 +20,4 @@ func twoSum(nums []int, target int) []int {
 	}
 
 	return nil
-}
-
-func main() {
-	fmt.Println(twoSum([]int{1, 2, 1, 5}, 6))
 }

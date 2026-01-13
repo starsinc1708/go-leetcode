@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p933_number_of_recent_calls
 
 type RecentCounter struct {
 	q []int
@@ -19,13 +17,4 @@ func (this *RecentCounter) Ping(t int) int {
 	}
 	this.q = this.q[i:]
 	return len(this.q)
-}
-
-func main() {
-	obj := Constructor()
-	obj.Ping(1)
-	obj.Ping(100)
-	obj.Ping(3001)
-	param1 := obj.Ping(3002)
-	fmt.Println(param1)
 }

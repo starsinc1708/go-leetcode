@@ -1,7 +1,6 @@
-package main
+package p415_add_strings
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -42,8 +41,4 @@ func addStrings(num1 string, num2 string) string {
 	slices.Reverse(result)
 
 	return string(result)
-}
-
-func main() {
-	fmt.Println(addStrings("456", "77"))
 }

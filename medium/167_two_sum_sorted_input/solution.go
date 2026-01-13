@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p167_two_sum_sorted_input
 
 func twoSum(numbers []int, target int) []int {
 	var i = 0
@@ -19,8 +17,4 @@ func twoSum(numbers []int, target int) []int {
 	}
 
 	return []int{}
-}
-
-func main() {
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
 }

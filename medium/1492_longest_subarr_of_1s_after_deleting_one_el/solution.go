@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p1492_longest_subarr_of_1s_after_deleting_one_el
 
 func longestSubarray(nums []int) int {
 	k := 1
@@ -25,9 +23,4 @@ func longestSubarray(nums []int) int {
 	}
 
 	return result - 1
-}
-
-func main() {
-	fmt.Println(longestSubarray([]int{1, 1, 0, 1}))                // 3
-	fmt.Println(longestSubarray([]int{0, 1, 1, 1, 0, 1, 1, 0, 1})) // 5
 }

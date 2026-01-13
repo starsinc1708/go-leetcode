@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p392_is_subsequence
 
 func isSubsequence(s string, t string) bool {
 	p1, p2 := 0, 0
@@ -10,8 +8,4 @@ func isSubsequence(s string, t string) bool {
 		}
 	}
 	return p2 == len(s)
-}
-
-func main() {
-	fmt.Println(isSubsequence("abc", "adsfxdexc"))
 }

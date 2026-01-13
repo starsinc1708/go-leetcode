@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package p844_backspace_string_compare
 
 func backspaceCompare(s string, t string) bool {
 	n := len(s) - 1
@@ -40,13 +36,4 @@ func backspaceCompare(s string, t string) bool {
 		m--
 	}
 	return n == m
-}
-
-func main() {
-	fmt.Println(backspaceCompare("ab#c", "ad#c")) // true
-	fmt.Println(backspaceCompare("b#c", "c"))     // true
-	fmt.Println(backspaceCompare("#", "#"))       // true
-	fmt.Println(backspaceCompare("#", "a#"))      // true
-	fmt.Println(backspaceCompare("ab##", "c#d#")) // true
-	fmt.Println(backspaceCompare("a#c", "b"))     // false
 }

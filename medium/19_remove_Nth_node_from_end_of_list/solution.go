@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p19_remove_nth_node_from_end_of_list
 
 type ListNode struct {
 	Val  int
@@ -24,8 +22,4 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	slow.Next = slow.Next.Next
 
 	return dummy.Next
-}
-
-func main() {
-	fmt.Println(removeNthFromEnd(&ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, nil}}}}, 2))
 }

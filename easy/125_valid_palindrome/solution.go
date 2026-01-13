@@ -1,12 +1,11 @@
-package main
+package p125_valid_palindrome
 
 import (
-	"fmt"
 	"unicode"
 )
 
 // https://leetcode.com/problems/valid-palindrome/
-func isPalindrome(s string) bool {
+func IsPalindrome(s string) bool {
 	var pStr []rune
 
 	for _, r := range s {
@@ -27,10 +26,4 @@ func isPalindrome(s string) bool {
 	}
 
 	return true
-}
-
-func main() {
-	fmt.Println(isPalindrome("A man, a plan, a canal"))
-	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
-	fmt.Println(isPalindrome(" "))
 }

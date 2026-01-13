@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p22_generate_parentheses
 
 // https://leetcode.com/problems/generate-parentheses
 // Time complexity: O(4^N/Sqrt(N))
@@ -23,8 +21,4 @@ func backTrack(result *[]string, currStr string, openCount int, closeCount int, 
 		backTrack(result, currStr+")", openCount, closeCount+1, n)
 	}
 
-}
-
-func main() {
-	fmt.Println(generateParenthesis(3))
 }

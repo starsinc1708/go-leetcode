@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package p1047_remove_all_adjacent_duplicates_in_string
 
 func removeDuplicates(s string) string {
 	stack := make([]rune, 0)
@@ -14,10 +10,4 @@ func removeDuplicates(s string) string {
 		}
 	}
 	return string(stack)
-}
-
-func main() {
-	fmt.Println(removeDuplicates("abbaca")) // ca
-	fmt.Println(removeDuplicates("azxxzy")) // ay
-	fmt.Println(removeDuplicates("abccba")) // ""
 }

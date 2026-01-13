@@ -1,7 +1,6 @@
-package main
+package p209_min_size_subarray_sum
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -31,12 +30,4 @@ func minSubArrayLen(target int, nums []int) int {
 	}
 
 	return result
-}
-
-func main() {
-	fmt.Println(minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))  // 2
-	fmt.Println(minSubArrayLen(11, []int{2, 3, 1, 2, 4, 3})) // 5
-	fmt.Println(minSubArrayLen(11, []int{1, 1, 1}))          // 0
-	fmt.Println(minSubArrayLen(4, []int{1, 4, 4}))           // 1
-
 }

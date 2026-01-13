@@ -1,4 +1,4 @@
-package main
+package p21_merge_two_sorted_lists
 
 type ListNode struct {
 	Val  int
@@ -32,8 +32,4 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	}
 
 	return dummy.Next
-}
-
-func main() {
-
 }

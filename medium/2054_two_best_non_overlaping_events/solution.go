@@ -1,11 +1,5 @@
-package main
-
-import "fmt"
+package p2054_two_best_non_overlaping_events
 
 func maxTwoEvents(events [][]int) int {
 	return 4
-}
-
-func main() {
-	fmt.Println(maxTwoEvents([][]int{{1, 3, 2}, {4, 5, 2}, {2, 4, 3}})) // 4
 }

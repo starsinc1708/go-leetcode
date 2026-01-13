@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p26_remove_duplicates_from_sorted_array
 
 func removeDuplicates(nums []int) int {
 	if len(nums) <= 1 {
@@ -16,8 +14,4 @@ func removeDuplicates(nums []int) int {
 		right++
 	}
 	return left + 1
-}
-
-func main() {
-	fmt.Println(removeDuplicates([]int{1, 1, 2}))
 }

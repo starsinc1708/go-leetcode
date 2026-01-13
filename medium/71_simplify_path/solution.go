@@ -1,7 +1,6 @@
-package main
+package p71_simplify_path
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -24,11 +23,4 @@ func simplifyPath(path string) string {
 	}
 
 	return "/" + strings.Join(stack, "/")
-}
-
-func main() {
-	fmt.Println(simplifyPath("/home/"))                           // "/home"
-	fmt.Println(simplifyPath("/home//foo/"))                      // "/home/foo"
-	fmt.Println(simplifyPath("/home/user/Documents/../Pictures")) // "/home/user/Pictures"
-	fmt.Println(simplifyPath("/.../a/../b/c/../d/./"))            // "/.../b/d"
 }

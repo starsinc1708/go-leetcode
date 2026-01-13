@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p11_container_with_most_water
 
 // Time Complexity: O(n)
 // Space Complexity: O(1)
@@ -22,8 +20,4 @@ func maxArea(height []int) int {
 	}
 
 	return maxArea
-}
-
-func main() {
-	fmt.Println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
 }

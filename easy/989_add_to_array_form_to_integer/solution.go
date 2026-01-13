@@ -1,7 +1,6 @@
-package main
+package p989_add_to_array_form_to_integer
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -20,8 +19,4 @@ func addToArrayForm(num []int, k int) []int {
 	}
 	slices.Reverse(result)
 	return result
-}
-
-func main() {
-	fmt.Println(addToArrayForm([]int{9, 9, 4}, 7))
 }

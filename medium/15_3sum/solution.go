@@ -1,7 +1,6 @@
-package main
+package p15_3sum
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -42,8 +41,4 @@ func threeSum(nums []int) [][]int {
 		}
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(threeSum([]int{-1, 0, 1, 2, -1, -4}))
 }

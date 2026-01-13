@@ -1,4 +1,4 @@
-package main
+package p876_middle_of_the_linked_list
 
 type ListNode struct {
 	Val  int
@@ -13,8 +13,4 @@ func middleNode(head *ListNode) *ListNode {
 		fast = fast.Next.Next
 	}
 	return slow
-}
-
-func main() {
-
 }

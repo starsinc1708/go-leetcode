@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p283_move_zeros
 
 func moveZeroes(nums []int) {
 	p1, p2 := 0, 0
@@ -10,10 +8,4 @@ func moveZeroes(nums []int) {
 			p1++
 		}
 	}
-}
-
-func main() {
-	nums := []int{0, 1, 0, 3, 12}
-	moveZeroes(nums)
-	fmt.Println(nums)
 }

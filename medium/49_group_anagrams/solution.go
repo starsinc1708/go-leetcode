@@ -1,7 +1,6 @@
-package main
+package p49_group_anagrams
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -29,8 +28,4 @@ func sortString(s string) string {
 		return chars[i] < chars[j]
 	})
 	return string(chars)
-}
-
-func main() {
-	fmt.Println(groupAnagrams([]string{"eat", "tea", "tan", "nat", "bat"}))
 }

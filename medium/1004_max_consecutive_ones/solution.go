@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package p1004_max_consecutive_ones
 
 func longestOnes(nums []int, k int) int {
 	begin := 0
@@ -25,9 +21,4 @@ func longestOnes(nums []int, k int) int {
 	}
 
 	return result
-}
-
-func main() {
-	fmt.Println(longestOnes([]int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2))
-	fmt.Println(longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3))
 }

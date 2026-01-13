@@ -1,7 +1,6 @@
-package main
+package p347_top_k_frequent_elements
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -41,10 +40,4 @@ func topKFrequent(nums []int, k int) []int {
 	}
 
 	return topKeys
-}
-
-func main() {
-	fmt.Println(topKFrequent([]int{1, 1, 1, 2, 2, 3}, 2))
-	fmt.Println(topKFrequent([]int{1}, 1))
-	fmt.Println(topKFrequent([]int{1, 2, 1, 2, 1, 2, 3, 1, 3, 2}, 2))
 }

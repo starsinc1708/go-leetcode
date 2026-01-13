@@ -1,4 +1,4 @@
-package main
+package p2095_delete_middle_node_linked_list
 
 type ListNode struct {
 	Val  int
@@ -21,8 +21,4 @@ func deleteMiddle(head *ListNode) *ListNode {
 	slow.Next = slow.Next.Next
 
 	return head
-}
-
-func main() {
-
 }

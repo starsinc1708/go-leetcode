@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package p238_product_of_array_except_self
 
 // https://leetcode.com/problems/product-of-array-except-self
 func productExceptSelf(nums []int) []int {
@@ -8,11 +6,4 @@ func productExceptSelf(nums []int) []int {
 		nums[i] *= nums[i]
 	}
 	return nums
-}
-
-func main() {
-	nums := []int{1, 2, 3, 4}
-	fmt.Println(nums)
-	productExceptSelf()
-	fmt.Println(nums)
 }
