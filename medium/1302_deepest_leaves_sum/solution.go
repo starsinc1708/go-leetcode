@@ -1,4 +1,4 @@
-package p199_binarytreerightsideview
+package p1302_deepestleavessum
 
 type TreeNode struct {
 	Val   int
@@ -6,23 +6,24 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func rightSideView(root *TreeNode) []int {
-	result := make([]int, 0)
-
+func deepestLeavesSum(root *TreeNode) int {
 	if root == nil {
-		return result
+		return 0
 	}
 
 	q := []*TreeNode{root}
 
+	result := 0
+
 	for len(q) > 0 {
 		level_size := len(q)
-
-		result = append(result, q[len(q)-1].Val)
-
+		result = 0
 		for range level_size {
+
 			node := q[0]
 			q = q[1:]
+
+			result += node.Val
 
 			if node.Left != nil {
 				q = append(q, node.Left)

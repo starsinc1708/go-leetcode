@@ -1,24 +1,25 @@
-package p199_binarytreerightsideview
+package p117_populatingnextrightpointers
 
-type TreeNode struct {
+type Node struct {
 	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+	Left  *Node
+	Right *Node
+	Next  *Node
 }
 
-func rightSideView(root *TreeNode) []int {
-	result := make([]int, 0)
-
+func connect(root *Node) *Node {
 	if root == nil {
-		return result
+		return root
 	}
 
-	q := []*TreeNode{root}
+	q := []*Node{root}
 
 	for len(q) > 0 {
 		level_size := len(q)
 
-		result = append(result, q[len(q)-1].Val)
+		for i := 0; i < level_size-1; i++ {
+			q[i].Next = q[i+1]
+		}
 
 		for range level_size {
 			node := q[0]
@@ -31,8 +32,7 @@ func rightSideView(root *TreeNode) []int {
 				q = append(q, node.Right)
 			}
 		}
-
 	}
 
-	return result
+	return root
 }
