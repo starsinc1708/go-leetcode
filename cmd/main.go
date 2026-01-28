@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(p125_valid_palindrome.IsPalindrome("ffrff"))
-	
+	fmt.Println(p125_valid_palindrome.IsPalindrome("ffкrff"))
+
 }
