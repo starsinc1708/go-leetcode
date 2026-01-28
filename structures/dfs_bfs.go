@@ -1,7 +1,5 @@
 package structures
 
-import "fmt"
-
 type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
@@ -19,14 +17,18 @@ func dfs(root *TreeNode) {
 }
 
 func bfs(root *TreeNode) {
-	q := make([]*TreeNode, 0)
-	q = append(q, root)
+	if root == nil {
+		return
+	}
+
+	q := []*TreeNode{root}
+
 	for len(q) > 0 {
 		level_size := len(q)
-		for i := range level_size {
-			fmt.Println(i)
+		for range level_size {
 			node := q[0]
 			q = q[1:]
+
 			q = append(q, node.Left)
 			q = append(q, node.Right)
 		}
